@@ -15,3 +15,11 @@ npm install
 npm run dev
 
 npm run build
+
+-- * --
+
+add bootsrap
+
+> php artisan db:seed
+
+add pagination
