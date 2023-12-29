@@ -10,6 +10,19 @@ Sección 28: Useful Packages: Yajra Datatable
 
 141 Getting started with yajra Datatable
 
+https://yajrabox.com/docs/laravel-datatables/10.0
+
+https://yajrabox.com/docs/laravel-datatables/10.0/quick-starter
+
+> composer require yajra/laravel-datatables:^10.0
+
+> php artisan datatables:make Users    
+    
+> npm run dev
+
+> npm run build
+
+    Ok
 
 142 Add datatable export buttons
 

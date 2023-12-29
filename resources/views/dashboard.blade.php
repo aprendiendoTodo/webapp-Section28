@@ -11,31 +11,11 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{-- {{ __("You're logged in!") }} --}}
 
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Create At</th>
-                            <th>Updated At</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($users as $user)
-                            <tr>
-                                <th scope="row">{{++$loop->index}}</th>
-                                <td>{{$user->name}}</td>
-                                <td>{{$user->email}}</td>
-                                <td>{{$user->created_at}}</td>
-                                <td>{{$user->updated_at}}</td>
-                              </tr>                                
-                            @endforeach
-                        </tbody>
-                      </table>
-                      {{$users->links()}}
+                    {{ $dataTable->table() }}
                 </div>
             </div>
         </div>
     </div>
+
+    {{ $dataTable->scripts(attributes: ['type' => 'module']) }}
 </x-app-layout>
