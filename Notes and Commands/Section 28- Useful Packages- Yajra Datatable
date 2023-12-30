@@ -26,6 +26,24 @@ https://yajrabox.com/docs/laravel-datatables/10.0/quick-starter
 
 142 Add datatable export buttons
 
+    *************************************
+    > php artisan about
+
+    Cuando este batido
+    > composer update --no-scripts
+    *************************************
+
+https://yajrabox.com/docs/laravel-datatables/10.0/buttons-installation
+
+> composer require yajra/laravel-datatables:^10.0
+
+
+https://docs.laravel-excel.com/3.1/getting-started/installation.html
+
+> composer require maatwebsite/excel
+
+
+> php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
 
 
 143 Datatable column Editing Options
