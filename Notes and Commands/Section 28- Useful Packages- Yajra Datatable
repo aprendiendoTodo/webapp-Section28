@@ -41,12 +41,24 @@ I) para arriba
 
 https://docs.laravel-excel.com/3.1/getting-started/installation.html
 
+    Tuve que agregar las extenciones manualmente en php.ini
+
 > composer require maatwebsite/excel
 
 > php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
 
 II) para arriba
 
+...
 
+https://github.com/barryvdh/laravel-snappy
+
+> composer require barryvdh/laravel-snappy
+
+> php artisan vendor:publish --provider="Barryvdh\Snappy\ServiceProvider"
+
+    Sin PDF directo
+
+III) para arriba
 
 143 Datatable column Editing Options
