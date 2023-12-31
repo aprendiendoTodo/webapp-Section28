@@ -3,7 +3,7 @@
 use App\DataTables\UsersDataTable;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Models\User;
+use Intervention\Image\ImageManagerStatic as Image;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +33,21 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::get('image', function(){
+    $img = Image::make('que_cazamos.jpg');
+
+    // $img->crop(400, 400);
+    $img
+    ->fit(400, 400)
+    // ->blur(10)
+    ->greyscale();
+    //$img->save('que_cazamos2.jpg', 5); //   second parameter is quality
+    
+    
+    
+    return $img->response();
 });
 
 require __DIR__.'/auth.php';

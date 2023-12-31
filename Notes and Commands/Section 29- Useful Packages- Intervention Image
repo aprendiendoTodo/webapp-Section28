@@ -1,0 +1,30 @@
+Sección 29: Useful Packages: Intervention Image
+
+144 Introduction of Intervention of image 
+
+    Intervention Image is an open source PHP image handling and manipulation library. It provides an easier and expressive way to create, edit, and compose images and supports currently the two most common image processing libraries GD Library and Imagick.
+
+
+145 Installation and basic implementation 
+
+https://image.intervention.io/v2/introduction/installation
+
+$ php composer.phar require intervention/image
+
+> composer require intervention/image
+
+I had that down the version
+
+    Hi
+    Everything seems fine. But, you can still try this:
+
+    1) In composer.json file change the version to 2.3: "intervention/image": "^2.3"
+
+    after this re-run
+
+    2) command> composer update
+
+
+146 Make a custom image filter
+
+
