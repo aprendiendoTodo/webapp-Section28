@@ -25,6 +25,15 @@ Para hacerlo dinamico falta implementar las vistas...
 
 150 Package Installation and setup
 
+https://github.com/anayarojo/laravel-shopping-cart
+
+> composer require anayarojo/shoppingcart
+
+> php artisan vendor:publish --tag=config --ansi --force
+
+    add debugbar
+https://github.com/barryvdh/laravel-debugbar
+> composer require barryvdh/laravel-debugbar --dev
 
 
 151 Add product into cart
