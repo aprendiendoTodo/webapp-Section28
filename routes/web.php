@@ -1,6 +1,7 @@
 <?php
 
 use App\DataTables\UsersDataTable;
+use App\Helpers\ImageFilter;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Intervention\Image\ImageManagerStatic as Image;
@@ -38,15 +39,8 @@ Route::middleware('auth')->group(function () {
 Route::get('image', function(){
     $img = Image::make('que_cazamos.jpg');
 
-    // $img->crop(400, 400);
-    $img
-    ->fit(400, 400)
-    // ->blur(10)
-    ->greyscale();
-    //$img->save('que_cazamos2.jpg', 5); //   second parameter is quality
-    
-    
-    
+        $img->filter(new ImageFilter(6));
+   
     return $img->response();
 });
 
