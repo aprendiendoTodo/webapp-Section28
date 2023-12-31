@@ -11,8 +11,20 @@ Sección 30: Useful Packages: Shopping Cart
 
 149 Show dynamic products on frontend
 
+Creating Models and Migrations for this module
+
+> php artisan make:model Product -m
+    change to migration file
+> php artisan migrate
+
+    Creamos el controller
+> php artisan make:controller CartController 
+
+    redireccionamos y creamos los archivos
+Para hacerlo dinamico falta implementar las vistas...
 
 150 Package Installation and setup
+
 
 
 151 Add product into cart

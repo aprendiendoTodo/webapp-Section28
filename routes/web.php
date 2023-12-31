@@ -2,6 +2,7 @@
 
 use App\DataTables\UsersDataTable;
 use App\Helpers\ImageFilter;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Intervention\Image\ImageManagerStatic as Image;
@@ -43,5 +44,13 @@ Route::get('image', function(){
    
     return $img->response();
 });
+
+Route::get('shop', function(){
+    
+});
+
+Route::get('shop', [CartController::class, 'shop'])->name('shop');
+
+Route::get('cart', [CartController::class, 'cart'])->name('cart');
 
 require __DIR__.'/auth.php';
