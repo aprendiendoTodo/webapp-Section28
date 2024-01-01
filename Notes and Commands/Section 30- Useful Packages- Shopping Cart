@@ -35,8 +35,18 @@ https://github.com/anayarojo/laravel-shopping-cart
 https://github.com/barryvdh/laravel-debugbar
 > composer require barryvdh/laravel-debugbar --dev
 
+    to the image File
+.env File
+
+FILESYSTEM_DISK=local
+
+FILESYSTEM_DISK=public
+
+> php artisan storage:link
+
 
 151 Add product into cart
+
 
 
 152 Fetch Products from cart session
