@@ -1,0 +1,19 @@
+Section 31: Useful Packages: Spatie Laravel Permission (Role and Permission)
+
+155 Introduction of Laravel Permission
+
+    This package allows you to manage user permissions and roles in a database.
+
+156 Installation and Setup of Laravel Permission
+
+
+
+157 Create Roles and Permissionand assign them to user
+
+
+
+158 How to check role and Permission at the blade 
+
+
+
+
